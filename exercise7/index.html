@@ -1,0 +1,20 @@
+<!--Creates an input box to type your name in-->
+<input id="name-input" type="text" placeholder="Enter your name" />
+<!--Creates a button-->
+<button id="my-button">Click Me</button>
+
+<script>
+    /*Assigns variables to the textbox and button created above*/
+  var myButton = document.querySelector('#my-button');
+  var nameInput = document.querySelector('#name-input');
+
+  /*Function that runs when the button is pressed*/
+  myButton.addEventListener('click', function () {
+    /*Checks if name is not empty*/
+    if (nameInput.value !== '') {
+        /*Greets the user by the name they entered*/
+      alert('Hello ' + nameInput.value);
+    }
+  });
+</script>
+
